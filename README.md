@@ -17,11 +17,11 @@ Additionally, our website also informs parents and clients on the importance of 
     Open live server with index.html
 
 # Screenshots
-![Home page](readme-img\image.png)
-![Links to informative blogs](readme-img\image-1.png)
-![Find a job page](readme-img\image-2.png)
+![Home page](readme-img/image.png)
+![Links to informative blogs](readme-img/image-1.png)
+![Find a job page](readme-img/image-2.png)
 ![Blog page](readme-img/image-3.png)
-![Contact Us](readme-img\image-4.png)
+![Contact Us](readme-img/image-4.png)
 
 
 # Team
