@@ -1,0 +1,61 @@
+[
+    {
+        "location": "Bengaluru",
+        "type_of_work": "Recurring job",
+        "field": "Tutoring",
+        "applicants": [
+            {
+                "name": "Kavitha",
+                "email": "kavitha@gmail.com",
+                "phone": "833456567"
+            }
+        ]
+    },
+    {
+        "location": "Chennai",
+        "type_of_work": "One-time job",
+        "field": "Tutoring",
+        "applicants": [
+            {
+                "name": "Abc",
+                "email": "abc@gmail.com",
+                "phone": "833456567"
+            }
+        ]
+    },
+    {
+        "location": "Mumbai",
+        "type_of_work": "One-time job",
+        "field": "Garden Maintenance",
+        "applicants": [
+            {
+                "name": "Abcdef",
+                "email": "abcdef@gmail.com",
+                "phone": "9991356567"
+            },
+            {
+                "name": "Brrrr",
+                "email": "brrr@gmail.com",
+                "phone": "8888888823"
+            }
+        ]
+    },
+    {
+        "location": "Chennai",
+        "field": "Other",
+        "type_of_work": "One-time job",
+        "applicants": []
+    },
+    {
+        "location": "Delhi",
+        "field": "Babysitting",
+        "type_of_work": "Recurring job",
+        "applicants": [
+            {
+                "name": "Nyaa",
+                "email": "nyaa@gmail.com",
+                "phone": "9999456567"
+            }
+        ]
+    }
+]

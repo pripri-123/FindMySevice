@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Categories | FindMyService</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/aos.css">
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+     <link rel="stylesheet" href="css/templatemo-digital-trend.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg position-absolute">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <i class="fa fa-line-chart"></i>
+              FindMyService
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="categories.html" class="nav-link active">Categories</a>
+                   </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- BLOG -->
+     <section class="blog section-padding">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-12 col-12 py-5 mt-5 mb-3 text-center">
+                      <h1 class="mb-4" data-aos="fade-up">Jobs</h1>
+                    </div>
+                            
+                    <div class="row mx-2" id="r">
+                                                
+                    </div>
+               </div>
+               
+          </div>
+     </section>
+
+
+
+     <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+            <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">Bringing clients and freelancers <strong>together</strong></h1>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="my-4">Contact Info</h4>
+
+            <p class="mb-1">
+              <i class="fa fa-phone mr-2 footer-icon"></i> 
+              +91 XXXXX XXXXX
+            </p>
+
+            <p>
+              <a href="#">
+                <i class="fa fa-envelope mr-2 footer-icon"></i>
+                office@findmyservice.com
+              </a>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
+            <h4 class="my-4">Located in</h4>
+
+            <p class="mb-1">
+              <i class="fa fa-home mr-2 footer-icon"></i> 
+              India
+            </p>
+          </div>
+
+          
+
+        </div>
+      </div>
+    </footer>
+
+<script>
+    async function loadJobs() {
+      try {
+          // Fetch jobs from the backend API
+          const response = await fetch('http://localhost:3000/api/jobs');
+          if (!response.ok) throw new Error("Failed to fetch jobs");
+          
+          const obj = await response.json();
+          const container = document.getElementById('r');
+  
+          obj.forEach((result) => {
+              // Construct card content
+              const content = `
+                  <div class="col-12 col-md-4">
+                      <div class="card">
+                          <img src="images/project/project-image01.jpg" alt="Avatar" style="width:100%">
+                          <div class="container">
+                              <h5 class="mt-3" style="color: #057a8d;">${result.location}</h5> 
+                              <p>${result.type_of_work}, <br></p>
+                              <p>Field: ${result.field}</p>
+                          </div>
+                          <div class="row justify-content-center align-items-center mb-3">
+                              <button class="button5 button6" onclick="callformpage()">Apply</button>
+                          </div>
+                      </div>
+                  </div>`;
+  
+              // Append the new card element
+              container.insertAdjacentHTML('beforeend', content);
+          });
+      } catch (error) {
+          console.error("Error loading jobs:", error);
+      }
+  }
+  
+  function callformpage() {
+      window.location.replace("register.html");
+  }
+  
+  // Call the function when the page loads
+  loadJobs();
+</script>  
+  
+   
+     <!-- SCRIPTS -->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/aos.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/custom.js"></script>
+     <script type="text/javascript" src=js/categories.js></script>
+
+</body>
+</html>
