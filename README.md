@@ -27,8 +27,8 @@ Additionally, our website also informs parents and clients on the importance of 
 # Team
 Vaishnav D V
 Priyadarshini Palanirajan
-
-
+Joel Panjimaram Mathew
+Aldrin Jose Dom Jose
 
 
 # Website template: 
